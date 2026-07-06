@@ -53,7 +53,6 @@ COPY --from=builder /repo/node_modules /repo/node_modules
 COPY --from=builder /repo/packages/happy-wire /repo/packages/happy-wire
 COPY --from=builder /repo/packages/happy-server /repo/packages/happy-server
 
-VOLUME /data
 EXPOSE 3005
 
 WORKDIR /repo/packages/happy-server
